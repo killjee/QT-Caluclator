@@ -28,7 +28,6 @@ MainWindow::MainWindow(QWidget *parent) :
 
 int MainWindow::stringToNum(QString s) {
     string p=s.toStdString();
-    s=p.toQString;
     int num=0,sz=p.size();
 
     for (int i=0 ; i<sz ; i++) {
@@ -36,6 +35,8 @@ int MainWindow::stringToNum(QString s) {
     }
     return num;
 }
+
+//ghgnvb
 
 double MainWindow::equalto(double fNum , int sNum) {
     if(addchk)   return fNum+sNum;
